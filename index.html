@@ -1,14 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HideNView - Hide And Show Password On Website</title>
+    <title>HideNView Show/Hide Password</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    
+
+    <div class="container">
+        <h1>HideNView</h1>
+
+        <div class="input-group">
+            <input type="password" id="password" placeholder="Enter your password">
+            <span class="toggle-password" onclick="togglePassword()">
+                <img id="toggleIcon" src="https://img.icons8.com/ios-filled/50/000000/visible.png"
+                    alt="Show Password Icon">
+            </span>
+        </div>
+
+        <button class="btn" onclick="alert('Password submitted!')">Submit</button>
+    </div>
 
     <script src="script.js"></script>
 </body>
+
 </html>
